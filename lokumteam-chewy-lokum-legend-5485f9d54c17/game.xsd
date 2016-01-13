@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Sun Jan 11 2015 00:11:19 GMT+0200 (EET) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="game">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="player">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="id" type="xs:int"></xs:element>
+                                             <xs:element name="name" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="level">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="id" type="xs:int"></xs:element>
+                                             <xs:element name="type" type="xs:string"></xs:element>
+                                             <xs:element name="left" type="xs:int"></xs:element>
+                                             <xs:element name="special_moves" type="xs:int"></xs:element>
+                                             <xs:element name="goalscore" type="xs:int"></xs:element>
+                                             <xs:element name="currentscore" type="xs:int"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="board">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="lokums">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="lokum" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="color" type="xs:string"></xs:element>
+                                                                                 <xs:element name="position">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="xcoord" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="ycoord" type="xs:int"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="type" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="obstacles"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>

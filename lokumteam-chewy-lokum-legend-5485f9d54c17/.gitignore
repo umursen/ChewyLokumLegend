@@ -1,0 +1,5 @@
+bin/
+*.class
+.settings/
+.DS_Store
+save.xml
